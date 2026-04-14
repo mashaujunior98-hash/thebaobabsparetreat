@@ -875,6 +875,18 @@
     background: linear-gradient(to right, transparent, var(--sage), var(--sand), var(--sage), transparent);
   }
 
+  /* ── HERO SLIDESHOW ── */
+  .hero-slideshow {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    background: var(--bark);
+  }
+  .hero-slideshow .hero-bg {
+    position: absolute;
+    inset: 0;
+  }
+
   @media (max-width: 1000px) {
     nav { padding: 1rem 1rem; }
     .brand-lockup img { height: 44px; }
@@ -895,6 +907,10 @@
     .hero-cta-group { flex-direction: column; gap: 1rem; }
     .btn-primary, .btn-ghost { width: 100%; }
     .hero-fade { height: 200px; }
+
+    .hero-slideshow {
+      height: 50vh;
+    }
 
     section { padding: 4.5rem 1.5rem; }
     .about { grid-template-columns: 1fr; padding: 4.5rem 1.5rem; }
@@ -943,6 +959,10 @@
     .hero-cta-group { gap: 0.85rem; }
     .btn-primary, .btn-ghost { padding: 0.95rem 1rem; }
 
+    .hero-slideshow {
+      height: 40vh;
+    }
+
     .intro-strip { padding: 2rem 1rem; }
     .intro-strip-tagline { font-size: 0.95rem; }
     .intro-strip-right { width: 100%; justify-content: space-between; flex-wrap: wrap; }
@@ -985,17 +1005,6 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-bg">
-    <div class="hero-panel"></div>
-    <div class="hero-panel"></div>
-    <div class="hero-panel"></div>
-    <video class="hero-panel" autoplay muted loop>
-      <source src="images/WhatsApp Video 2026-04-08 at 09.17.45.mp4" type="video/mp4">
-    </video>
-    <video class="hero-panel" autoplay muted loop>
-      <source src="images/WhatsApp Video 2026-04-08 at 09.17.46.mp4" type="video/mp4">
-    </video>
-  </div>
   <div class="hero-overlay"></div>
   <div class="hero-vignette"></div>
   <div class="hero-fade"></div>
@@ -1026,6 +1035,21 @@
   <div class="scroll-cue">
     <span>Discover</span>
     <div class="scroll-mouse"></div>
+  </div>
+</div>
+
+<!-- SLIDESHOW -->
+<div class="hero-slideshow">
+  <div class="hero-bg">
+    <div class="hero-panel"></div>
+    <div class="hero-panel"></div>
+    <div class="hero-panel"></div>
+    <video class="hero-panel" autoplay muted loop>
+      <source src="images/WhatsApp Video 2026-04-08 at 09.17.45.mp4" type="video/mp4">
+    </video>
+    <video class="hero-panel" autoplay muted loop>
+      <source src="images/WhatsApp Video 2026-04-08 at 09.17.46.mp4" type="video/mp4">
+    </video>
   </div>
 </div>
 
